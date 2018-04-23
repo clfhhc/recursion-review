@@ -17,14 +17,14 @@ var getElementsByClassName = function(className, node) {
   var nodes = [];
 
   if(node.classList.contains(className)){
-      nodes.push(nodes);
+      nodes.push(node);
  }
  
   for(var i = 0; i < node.children.length; i++){
    // if(node.children[i].classList.contains(className)){
    //    console.log(1);
    //    nodes.push(node.children[i]);
-        nodes=nodes.concat(getElementsByClassName(className,node.children[i]));
+          nodes=nodes.concat(getElementsByClassName(className,node.children[i]));
   } 
 
 
